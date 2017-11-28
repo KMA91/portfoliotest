@@ -61,11 +61,21 @@ $(document).ready(function() {
 
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
-      var bottom_of_object = $('.projectTitle').position().top + $('.projectTitle').outerHeight();
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-      if( bottom_of_window > bottom_of_object ){
+      var bottom_of_window = $(window).scrollTop();
+      var page2 = $('.projectimg').position().top;
+      var page3 = $('.techimg').position().top;
+
+      if( bottom_of_window > page2 - bottom_of_window){
         $(".hidetypewriter").removeClass("hidetypewriter").addClass("typewriter");
         $('.projectimg').animate({'opacity': '0.9'},4000);
         }
+      if( bottom_of_window > page3 - bottom_of_window){
+        $('.maintech').animate({'opacity': '0.9'}, 2000);
+        $('.databases').animate({'opacity': '0.9'}, 2000);
+        $('.othertech').animate({'opacity': '0.9'}, 2000);
+        // $('.databasessub').animate({'width': '75%', 'height': '1%'}, 2000);
+        $('.mainsub').animate({'width': '75%', 'height': '60%'}, 2000);
+        // $('.othersub').animate({'width': '75%', 'height': '60.5%'}, 2000);
+      }
       });
   });
