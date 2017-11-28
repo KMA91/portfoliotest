@@ -406,6 +406,23 @@ html, body {
   position: absolute;
 }
 
+@media only screen and (max-width: 1370px){
+  .pg2arrowup{
+    left: 94.5%;
+  }
+  .pg2arrowdown{
+    left: 94.5%;
+  }
+  .pg3arrowup{
+    left: 94.5%;
+    bottom: -105.5%;
+  }
+}
+
+@media only screen and (max-width: 1330px){
+
+}
+
 /* IPAD & IPAD PRO */
 @media only screen and (max-width: 1025px){
   /* PAGE ONE */
@@ -529,6 +546,11 @@ html, body {
 }
 /* MOBILE */
 @media only screen and (max-width: 415px){
+
+  .landingimg, .projectimg, .techimg{
+    background-attachment: scroll;
+  }
+
   /* PAGE ONE */
   .landingimg{
     background-position: center;
@@ -576,6 +598,9 @@ html, body {
   .maintech{
     font-size: 2.5em;
     opacity: 1;
+  }
+  .typewriter{
+    display: none;
   }
 }
 
