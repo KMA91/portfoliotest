@@ -29,6 +29,7 @@ html, body {
   display: block;
 }
 
+
 .landingimg{
   position: relative;
   opacity: 0.9;
@@ -36,42 +37,65 @@ html, body {
   background-size: cover;
   background-repeat: none;
   background-attachment: scroll;
-}
-
-.landingimg{
   background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/jscup.png');
   min-height: 100%;
   width: 100%;
-  height: 1vw;
 }
 
-.landingname{
+
+.landinginfo, .socialmedia, .cupcontent{
   position: absolute;
+  width: 100%;
+}
+
+
+.landinginfo{
+  top: 20%;
   left: 65%;
-  bottom: 68%;
+  width: 35%;
+  text-align: left;
   text-transform: uppercase;
-  letter-spacing: 10px;
-  font-size: 3.5vw;
-  color: black;
+  letter-spacing: 7px;
+  font-size: 1vw;
 }
 
-/*.landinglastname{
-  position: absolute;
-  left: 87%;
-  bottom: 63%;
-  text-transform: uppercase;
-  letter-spacing: 10px;
+.landinginfo h1{
   font-size: 3.5vw;
-  color: black;
-}*/
+}
 
-.meoncup img{
-  position: absolute;
+
+
+.cupcontent{
   top: 38%;
-  left: 66.5%;
-  width: 16.5vw;
-  opacity: 0.6;
+  left: 65%;
+  width: 35%;
 }
+
+.meoncup{
+  display: block;
+  opacity: 0.7;
+  width: 50%;
+  margin-left: 3%;
+}
+
+.cupcontent img:not(.meoncup){
+  display: inline-block;
+}
+
+.linkedin, .github{
+  width: 11%;
+  opacity: 0.7;
+  margin: 1%;
+}
+
+.linkedin:hover, .github:hover{
+  opacity: 1;
+}
+
+.linkedin{
+  margin-left: 14%;
+}
+
 
 @-moz-keyframes bounce {
   0%, 100% {
@@ -122,6 +146,7 @@ html, body {
   background-size: contain;
 }
 
+
 .bounce {
   -moz-animation: bounce 1s infinite;
   -webkit-animation: bounce 1s infinite;
@@ -130,8 +155,8 @@ html, body {
 
 .pg1arrow{
   position: absolute;
-  bottom: 53.8%;
-  left: 88.3%;
+  bottom: 53%;
+  left: 88%;
 }
 
 /* PAGE TWO // PROJECTS & TYPEWRITER */ /* PAGE TWO // PROJECTS & TYPEWRITER */
@@ -195,10 +220,6 @@ html, body {
   max-width: 69%;
 }
 
-.project1{
-  /*max-width: 51%;*/
-}
-
 .githubButton, .demoButton{
   margin: 10px;
 }
@@ -240,17 +261,18 @@ html, body {
 
 .pg2arrowdown{
   opacity: 1;
-  left: 97.8%;
+  left: 97.1%;
   bottom: -100%;
   position: absolute;
 }
 
 .pg2arrowup{
   opacity: 1;
-  left: 97.8%;
-  bottom: -5%;
+  left: 97.1%;
+  bottom: -6.2%;
   position: absolute;
 }
+
 
 /* PAGE THREE // TECHNOLOGY */ /* PAGE THREE // TECHNOLOGY */ /* PAGE THREE // TECHNOLOGY */
 
@@ -266,20 +288,20 @@ html, body {
   opacity: 0.8;
 }
 
-.tech{
+/*.tech{
   display: inline-block;
   background: white;
   opacity: 0.5;
   width: 100%;
   height: 25%;
   margin-top: 15%;
-}
+}*/
 
 .maintech, .databases, .othertech{
   text-align: center;
   display: inline-block;
   float: left;
-  height: 87%;
+  opacity: 0;
   width: 33.33%;
   font-size: 2em;
   margin-top: 5%;
@@ -298,113 +320,276 @@ html, body {
 
 .mainsub{
   background: white;
-  margin: 15% auto 0;
+  margin: 8% auto 0;
   border-radius: 15px;
-  opacity: 0.9;
-  width: 75%;
-  height: 70%
+  opacity: 0.7;
+  width: 0;
+  height: 0;
+  /*width: 75%;
+  height: 67%;*/
+}
+
+.mainsub:hover{
+  opacity: 1;
 }
 
 .mainsub img{
-  margin: 0 auto 5%;
   text-align: center;
-  display: block;
+  margin: 10% auto;
   width: 50%;
-}
-
-#node{
-  margin: 0 auto;
-}
-
-#express{
-  margin: 2% 26.1% 5%;
-  width: 45%;
-}
-
-#angular{
-  width: 45%;
-  margin-left: 25.5%;
-}
-
-#react{
-  width: 44%;
-  margin-left: 24.5%;
-}
-
-#redux{
-  width: 45%;
-  margin-left: 25%;
-  margin-top: -2.5%;
-  margin-bottom: 3%;
-}
-
-#mongo{
-  width: 45%;
-  margin-left: 25%;
 }
 
 .databasessub{
   background: white;
-  margin: 18.7% auto;
+  margin: 14% auto 0;
   border-radius: 15px;
-  opacity: 0.8;
-  width: 75%;
-  height: 70%
+  opacity: 0.7;
+  width: 0;
+  height: 0;
+  /*width: 75%;
+  height: 67%*/
+}
+
+.databasessub:hover{
+  opacity: 1;
 }
 
 .databases h2{
-  margin-top: 1.8%;
   background: #ececec;
   width: 36%;
   opacity: 0.65;
 }
 
 .databasessub img{
-  margin: 0 auto;
+  margin: 13% auto;
   text-align: center;
-  display: block;
+  width: 50%;
 }
 
 .othersub{
   background: white;
-  margin: 15% auto;
+  margin: 8.5% auto;
   border-radius: 15px;
-  opacity: 0.8;
-  width: 75%;
-  height: 70%;
+  opacity: 0.7;
+  width: 0;
+  height: 0;
+  display: inline-block;
 }
 
-.databases img{
-  margin: 0 auto;
+.othersub:hover{
+  opacity: 1;
+}
+
+.othersub img{
+  margin: 10% auto;
   text-align: center;
-  display: block;
-  width: 46%;
-}
-
-#mysql{
-  margin-bottom: 4%;
-}
-
-#sqllite{
-  margin-bottom: 12%;
-}
-
-#postgres{
   width: 70%;
 }
 
-.pg3arrowdown{
-  left: 97.8%;
-  top: 295.5%;
+.pg3contact{
+  left: 91.5%;
+  top: 291.5%;
   position: absolute;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 1.5vw;
+  background: #ff0000;
+  padding: 1vw 2vw;
+  text-decoration: none;
 }
 
 .pg3arrowup{
-  left: 97.8%;
-  bottom: -105%;
+  left: 97.1%;
+  bottom: -106.5%;
   position: absolute;
 }
 
+/* IPAD & IPAD PRO */
+@media only screen and (max-width: 1025px){
+  /* PAGE ONE */
+  .landingimg{
+    background-position: right;
+  }
+
+  .landinginfo, .socialmedia, .cupcontent{
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .landinginfo{
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .landinginfo h1{
+    padding-top: 30%;
+    font-size: 8vw;
+  }
+
+  .meoncup{
+    width: 35%;
+    margin: 7% auto 0;
+    text-align: center;
+  }
+
+  .cupcontent{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .linkedin, .github{
+    margin: 0;
+    opacity: 0.9;
+  }
+
+  .linkedin{
+    margin-left: -2%;
+  }
+  .pg1arrow{
+    bottom: 15%;
+    left: 47%;
+  }
+  /* PAGE 2 */
+  .projectimg{
+    background-position: center;
+    background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/woodcactus.png');
+  }
+  .typewriter {
+    margin-bottom: -6%;
+    bottom: 99%;
+    left: 28%;
+    font: bold 5vw Consolas, Monaco, monospace;
+  }
+  .projects{
+    float: none;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 8%;
+    width: 65%;
+  }
+  .projects h2{
+    font-size: 5vw;
+  }
+  .githubButton, .demoButton{
+    margin: 20px;
+  }
+  .githubButton {
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: white;
+    font-size: 2.5vw;
+    padding: 2vw;
+    background: #bf4133;
+    text-decoration: none;
+  }
+  .demoButton {
+    display: inline-block;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: white;
+    font-size: 2.5vw;
+    padding: 2vw;
+    background: #c78b4c;
+    text-decoration: none;
+  }
+  .pg2arrowdown{
+    bottom: -99%;
+    left: 93%;
+  }
+  .pg2arrowup{
+    bottom: -5.2%;
+    left: 93%;
+  }
+
+  /* PAGE 3 */
+
+  .databases, .othertech{
+    display: none;
+  }
+  .maintech{
+    float:none;
+    font-size: 3.5em;
+    width: 100%;
+  }
+  .pg3arrowup{
+    left: 93%;
+  }
+  .pg3contact{
+    left: 81%;
+    font-size: 3vw;
+    padding: 3vw 4vw;
+  }
+}
+/* MOBILE */
+@media only screen and (max-width: 415px){
+  /* PAGE ONE */
+  .landingimg{
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
+  }
+  .landinginfo{
+    font-size: 4vw;
+    letter-spacing: 5px;
+  }
+  .meoncup{
+    width: 60%;
+    opacity: 1;
+    margin-bottom: 2%;
+  }
+  .linkedin, .github{
+    width: 16%;
+    opacity: 1;
+    margin: 1%;
+  }
+  .projects{
+    width: 95%;
+  }
+  .githubButton, .demoButton{
+    font-size: 3.5vw;
+    margin: 1%;
+  }
+  .pg2arrowup{
+    bottom: -7.2%;
+    left: 90%;
+  }
+  .pg2arrowdown{
+    bottom: -100%;
+    left: 90%;
+  }
+  .pg3arrowup{
+    left: 90%;
+  }
+  .pg3contact{
+    left: 80%;
+    font-size: 4vw;
+    padding: 3vw 4vw;
+  }
+  .maintech{
+    font-size: 2.5em;
+    opacity: 1;
+  }
+}
+
+/* SMALLER MOBILE */
+@media only screen and (max-width: 375px){
+  .pg2arrowup{
+    bottom: -7.8%;
+    left: 89%;
+  }
+  .pg2arrowdown{
+    left: 89%;
+  }
+}
 /* PAGE FOUR // CONTACT */ /* PAGE FOUR // CONTACT */ /* PAGE FOUR // CONTACT */ /* PAGE FOUR // CONTACT */
 
 /*.contactimg{
