@@ -73,9 +73,9 @@ $(document).ready(function() {
         $('.maintech').animate({'opacity': '0.9'}, 2000);
         $('.databases').animate({'opacity': '0.9'}, 2000);
         $('.othertech').animate({'opacity': '0.9'}, 2000);
-        // $('.databasessub').animate({'width': '75%', 'height': '1%'}, 2000);
+        $('.databasessub').animate({'width': '75%', 'height': '1%'}, 2000);
         $('.mainsub').animate({'width': '75%', 'height': '60%'}, 2000);
-        // $('.othersub').animate({'width': '75%', 'height': '60.5%'}, 2000);
+        $('.othersub').animate({'width': '75%', 'height': '60.5%'}, 2000);
       }
       });
   });
