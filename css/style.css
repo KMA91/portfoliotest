@@ -574,6 +574,7 @@ html, body {
   }
   .projects{
     width: 95%;
+    padding-top: 1%;
   }
   .githubButton, .demoButton{
     font-size: 3.5vw;
@@ -589,6 +590,7 @@ html, body {
   }
   .pg3arrowup{
     left: 90%;
+    bottom: -107%;
   }
   .pg3contact{
     left: 80%;
