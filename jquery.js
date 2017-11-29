@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-// SMOOTH SCROLLING
-
+  // SMOOTH SCROLLING
   // Select all links with hashes
   $('a[href*="#"]')
     // Remove links that don't actually link to anything
@@ -39,6 +38,8 @@ $(document).ready(function() {
       }
     });
 
+    // PROJECT IMAGE CHANGES
+
     $('.projectimg1').hover(function(){
       $('.projectimg1').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whin.png");
     })
@@ -57,18 +58,16 @@ $(document).ready(function() {
     $('.projectimg3').mouseleave(function(){
       $('.projectimg3').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/emailyfront.png").css("margin-bottom","0%");
     })
-// FADE IN PROJECTS AND TYPEWRITER
 
+
+
+    // FADE IN PROJECTS AND TYPEWRITER
     /* Every time the window is scrolled ... */
     $(window).scroll( function(){
       var bottom_of_window = $(window).scrollTop();
       var page2 = $('.projectimg').position().top;
       var page3 = $('.techimg').position().top;
 
-      if( bottom_of_window > page2 - bottom_of_window){
-        $(".hidetypewriter").removeClass("hidetypewriter").addClass("typewriter");
-        $('.projectimg').animate({'opacity': '0.9'},4000);
-        }
       if( bottom_of_window > page3 - bottom_of_window){
         $('.maintech').animate({'opacity': '0.9'}, 2000);
         $('.databases').animate({'opacity': '0.9'}, 2000);
@@ -76,6 +75,11 @@ $(document).ready(function() {
         $('.databasessub').animate({'width': '75%', 'height': '1%'}, 2000);
         $('.mainsub').animate({'width': '75%', 'height': '60%'}, 2000);
         $('.othersub').animate({'width': '75%', 'height': '60.5%'}, 2000);
+      }
+      if( bottom_of_window > page2 - bottom_of_window){
+        $(".hidetypewriter").removeClass("hidetypewriter").addClass("typewriter");
+        // IGNORE JQUERY IF LANDSCAPE VIEW ON MOBILE
+        $('.projectimg').animate({'opacity': '0.9'},4000);
       }
       });
   });

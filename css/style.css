@@ -611,6 +611,35 @@ html, body {
     .landingimg, .projectimg, .techimg{
       background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
       background-attachment: fixed;
+      opacity: 1;
+    }
+    .techimg{
+      min-height: 150%;
+    }
+    .landinginfo h1 {
+      padding-top: 2%;
+    }
+    .meoncup{
+      width: 40%;
+      margin: 2% auto 0;
+    }
+    .pg1arrow{
+      left: 45%;
+    }
+    .pg2arrowup{
+      bottom: -25.2%;
+    }
+    .pg2arrowdown{
+      bottom: -170%;
+    }
+    .mainsub{
+      opacity: 1;
+    }
+    .pg3arrowup{
+      bottom: -186%;
+    }
+    .pg3contact{
+      top: 408.5%;
     }
 
 }
