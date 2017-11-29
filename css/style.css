@@ -322,10 +322,6 @@ html, body {
   margin: 8% auto 0;
   border-radius: 15px;
   opacity: 0.7;
-  width: 0;
-  height: 0;
-  /*width: 75%;
-  height: 67%;*/
 }
 
 .mainsub:hover{
@@ -343,10 +339,6 @@ html, body {
   margin: 14% auto 0;
   border-radius: 15px;
   opacity: 0.7;
-  width: 0;
-  height: 0;
-  /*width: 75%;
-  height: 67%*/
 }
 
 .databasessub:hover{
@@ -370,8 +362,6 @@ html, body {
   margin: 8.5% auto;
   border-radius: 15px;
   opacity: 0.7;
-  width: 0;
-  height: 0;
   display: inline-block;
 }
 
@@ -614,7 +604,7 @@ html, body {
       opacity: 1;
     }
     .techimg{
-      min-height: 251%;
+      min-height: 214%;
     }
     .landinginfo h1 {
       padding-top: 1%;
@@ -640,7 +630,13 @@ html, body {
       bottom: -15.2%;
     }
     .pg2arrowdown{
-      bottom: -236%;
+      bottom: -209%;
+    }
+    .maintech h2{
+      margin: 0;
+      background-color: transparent;
+      width: 100%;
+
     }
     .mainsub{
       opacity: 1;
@@ -649,7 +645,7 @@ html, body {
       bottom: -276%;
     }
     .pg3contact{
-      top: 408.5%;
+      top: 505.5%;
     }
 
 }
