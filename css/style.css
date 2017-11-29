@@ -630,22 +630,23 @@ html, body {
       bottom: -15.2%;
     }
     .pg2arrowdown{
-      bottom: -209%;
+      bottom: -225%;
     }
     .maintech h2{
       margin: 0;
       background-color: transparent;
       width: 100%;
+      font-size: 0.75em;
 
     }
     .mainsub{
       opacity: 1;
     }
     .pg3arrowup{
-      bottom: -276%;
+      bottom: -263%;
     }
     .pg3contact{
-      top: 505.5%;
+      top: 529.5%;
     }
 
 }
