@@ -617,14 +617,24 @@ html, body {
       min-height: 150%;
     }
     .landinginfo h1 {
-      padding-top: 2%;
+      padding-top: 1%;
+      font-size: 6vw;
     }
     .meoncup{
-      width: 40%;
+      width: 25%;
       margin: 2% auto 0;
     }
+    .linkedin{
+      margin-left: -2%;;
+    }
+    .github{
+      margin-left: 13%;
+    }
     .pg1arrow{
-      left: 45%;
+      left: 46%;
+    }
+    .typewriter{
+      display: none;
     }
     .pg2arrowup{
       bottom: -25.2%;
