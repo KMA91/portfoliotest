@@ -614,7 +614,7 @@ html, body {
       opacity: 1;
     }
     .techimg{
-      min-height: 150%;
+      min-height: 251%;
     }
     .landinginfo h1 {
       padding-top: 1%;
@@ -628,7 +628,7 @@ html, body {
       margin-left: -2%;;
     }
     .github{
-      margin-left: 13%;
+      margin-left: 14%;
     }
     .pg1arrow{
       left: 46%;
@@ -637,16 +637,16 @@ html, body {
       display: none;
     }
     .pg2arrowup{
-      bottom: -25.2%;
+      bottom: -15.2%;
     }
     .pg2arrowdown{
-      bottom: -170%;
+      bottom: -236%;
     }
     .mainsub{
       opacity: 1;
     }
     .pg3arrowup{
-      bottom: -186%;
+      bottom: -276%;
     }
     .pg3contact{
       top: 408.5%;
