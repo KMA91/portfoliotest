@@ -41,7 +41,7 @@ $(document).ready(function() {
     // PROJECT IMAGE CHANGES
 
     $('.projectimg1').hover(function(){
-      $('.projectimg1').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whin.png");
+      $('.projectimg1').attr("src", "img/tonyma_out.png");
     })
     $('.projectimg1').mouseleave(function(){
       $('.projectimg1').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whfront.png");

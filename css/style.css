@@ -55,13 +55,26 @@ html, body {
   width: 35%;
   text-align: left;
   text-transform: uppercase;
-  letter-spacing: 7px;
   font-size: 1vw;
+  font-family: 'Questrial', sans-serif;
 }
 
-.landinginfo h1{
+.landinginfo h1 {
   font-size: 2.5vw;
   font-weight: 100;
+  color: red;
+  letter-spacing: 2px;
+}
+
+.landinginfo h3 {
+  margin-left: 2px;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+.landinginfo h3 a {
+  text-decoration: none;
+  color: black;
 }
 
 .cupcontent{
