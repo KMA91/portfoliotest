@@ -44,16 +44,16 @@ $(document).ready(function() {
       $('.projectimg1').attr("src", "img/tonyma_out.png");
     })
     $('.projectimg1').mouseleave(function(){
-      $('.projectimg1').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whfront.png");
+      $('.projectimg1').attr("src", "img/tonyma_in.png");
     })
     $('.projectimg2').hover(function(){
-      $('.projectimg2').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/artapediain.png").css("margin-bottom","0.1%");
+      $('.projectimg2').attr("src", "img/jenniferma_out.png").css("margin-bottom","1px");
     })
     $('.projectimg2').mouseleave(function(){
-      $('.projectimg2').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/artapediafront.png").css("margin-bottom","0");
+      $('.projectimg2').attr("src", "img/jenniferma_in.png").css("margin-bottom","0");
     })
     $('.projectimg3').hover(function(){
-      $('.projectimg3').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/emailyin.png").css("margin-bottom","-0.7%");
+      $('.projectimg3').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/emailyin.png").css("margin-bottom","-4px");
     })
     $('.projectimg3').mouseleave(function(){
       $('.projectimg3').attr("src", "https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/emailyfront.png").css("margin-bottom","0%");
@@ -66,9 +66,9 @@ $(document).ready(function() {
     $(window).scroll( function(){
       var bottom_of_window = $(window).scrollTop();
       var page2 = $('.projectimg').position().top;
-      var page3 = $('.techimg').position().top;
+      // var page3 = $('.techimg').position().top;
 
-      if( bottom_of_window > page3 - bottom_of_window){
+      if( bottom_of_window > page2 - bottom_of_window){
         $('.maintech').animate({'opacity': '0.9'}, 2000);
         $('.databases').animate({'opacity': '0.9'}, 2000);
         $('.othertech').animate({'opacity': '0.9'}, 2000);

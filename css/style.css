@@ -14,23 +14,19 @@ html, body {
   height: 100%;
 }
 
+.button {
+  font-family: 'Questrial', sans-serif;
+  margin: 13px 2px;
+  letter-spacing: 2px;
+}
 
-.wrapper{
+.wrapper {
   height: 100%;
 }
 
-
 /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */
 
-.landingwrapper{
-  min-height: 100%;
-  width: 100%;
-  height: 1vw;
-  display: block;
-}
-
-
-.landingimg{
+.landingimg {
   position: relative;
   opacity: 0.9;
   background-position: center;
@@ -42,14 +38,12 @@ html, body {
   width: 100%;
 }
 
-
-.landinginfo, .socialmedia, .cupcontent{
+.landinginfo, .socialmedia, .cupcontent {
   position: absolute;
   width: 100%;
 }
 
-
-.landinginfo{
+.landinginfo {
   top: 20%;
   left: 65%;
   width: 35%;
@@ -77,20 +71,20 @@ html, body {
   color: black;
 }
 
-.cupcontent{
+.cupcontent {
   top: 38%;
   left: 65%;
   width: 35%;
 }
 
-.meoncup{
+.meoncup {
   display: block;
   opacity: 0.7;
   width: 50%;
   margin-left: 3%;
 }
 
-.cupcontent img:not(.meoncup){
+.cupcontent img:not(.meoncup) {
   display: inline-block;
 }
 
@@ -107,7 +101,6 @@ html, body {
 .linkedin{
   margin-left: 14%;
 }
-
 
 @-moz-keyframes bounce {
   0%, 100% {
@@ -184,8 +177,6 @@ html, body {
   width: 100%;
 }
 
-
-
 @-webkit-keyframes typing { from { width: 0; } }
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
@@ -202,93 +193,59 @@ html, body {
 	-webkit-animation: typing 3s steps(21, end), blink-caret .5s step-end infinite alternate;
 }
 
-.hidetypewriter{
+.hidetypewriter {
   display: none;
   width: 50%;
   float: left;
 }
 
-.redDev{
+.redDev {
   display: inline-block;
   color: #bf4133;
 }
 
-.projectTitle, .project1, .project2, .project3{
+.projectTitle, .project1, .project2, .project3 {
   font-family: Consolas, Monaco, monospace;
 }
 
-.projects{
+.projects {
   text-align: center;
   width: 31%;
   float: right;
 }
 
-.projects h2{
+.projects h2 {
   font-size: 2vw;
   margin: 3% 0;
 }
 
-.projects img{
+.projects img {
   max-width: 69%;
 }
 
-.githubButton, .demoButton{
-  margin: 10px;
-}
-
-.githubButton {
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Georgia;
-  color: white;
-  font-size: 15px;
-  padding: 3px;
-  background: #bf4133;
-  text-decoration: none;
-}
-
-.githubButton:hover {
-  background: #92352a;
-  text-decoration: none;
-}
-
-.demoButton {
-  display: inline-block;
-  -webkit-border-radius: 10;
-  -moz-border-radius: 10;
-  border-radius: 10px;
-  font-family: Georgia;
-  color: white;
-  font-size: 15px;
-  padding: 3px;
-  background: #c78b4c;
-  text-decoration: none;
-}
-
-.demoButton:hover {
-  background: #906537;
-  text-decoration: none;
-}
-
-.pg2arrowdown{
+.pg2arrowdown {
   opacity: 1;
   left: 97.1%;
   bottom: -100%;
   position: absolute;
 }
 
-.pg2arrowup{
+.pg2arrowup {
   opacity: 1;
   left: 97.1%;
   bottom: -6.2%;
   position: absolute;
 }
-
+/* 
+@media (min-width: 1600px ){
+  .projects {
+    width: 30%;
+  }
+} */
 
 /* PAGE THREE // TECHNOLOGY */ /* PAGE THREE // TECHNOLOGY */ /* PAGE THREE // TECHNOLOGY */
 
-.techimg{
+.techimg {
   background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/techimg.png');
   background-position: top;
   background-size: cover;
@@ -300,16 +257,7 @@ html, body {
   opacity: 0.8;
 }
 
-/*.tech{
-  display: inline-block;
-  background: white;
-  opacity: 0.5;
-  width: 100%;
-  height: 25%;
-  margin-top: 15%;
-}*/
-
-.maintech, .databases, .othertech{
+.maintech, .databases, .othertech {
   text-align: center;
   display: inline-block;
   float: left;
@@ -319,7 +267,7 @@ html, body {
   margin-top: 5%;
 }
 
-.maintech h2, .databases h2, .othertech h2{
+.maintech h2, .databases h2, .othertech h2 {
   margin: 0 auto;
   text-align: center;
   width: 23%;
@@ -330,47 +278,47 @@ html, body {
   opacity: 0.7;
 }
 
-.mainsub{
+.mainsub {
   background: white;
   margin: 8% auto 0;
   border-radius: 15px;
   opacity: 0.7;
 }
 
-.mainsub:hover{
+.mainsub:hover {
   opacity: 1;
 }
 
-.mainsub img{
+.mainsub img {
   text-align: center;
   margin: 10% auto;
   width: 50%;
 }
 
-.databasessub{
+.databasessub {
   background: white;
   margin: 14% auto 0;
   border-radius: 15px;
   opacity: 0.7;
 }
 
-.databasessub:hover{
+.databasessub:hover {
   opacity: 1;
 }
 
-.databases h2{
+.databases h2 {
   background: #ececec;
   width: 36%;
   opacity: 0.65;
 }
 
-.databasessub img{
+.databasessub img {
   margin: 13% auto;
   text-align: center;
   width: 50%;
 }
 
-.othersub{
+.othersub {
   background: white;
   margin: 8.5% auto;
   border-radius: 15px;
@@ -378,17 +326,17 @@ html, body {
   display: inline-block;
 }
 
-.othersub:hover{
+.othersub:hover {
   opacity: 1;
 }
 
-.othersub img{
+.othersub img {
   margin: 10% auto;
   text-align: center;
   width: 70%;
 }
 
-.pg3contact{
+.pg3contact {
   left: 91.5%;
   top: 291.5%;
   position: absolute;
@@ -403,14 +351,14 @@ html, body {
   text-decoration: none;
 }
 
-.pg3arrowup{
+.pg3arrowup {
   left: 97.1%;
   bottom: -106.5%;
   position: absolute;
 }
 
-@media only screen and (max-width: 1370px){
-  .pg2arrowup{
+@media only screen and (max-width: 1370px) {
+  .pg2arrowup {
     left: 94.5%;
   }
   .pg2arrowdown{
@@ -423,53 +371,54 @@ html, body {
 }
 
 /* IPAD & IPAD PRO */
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1025px) {
   /* PAGE ONE */
-  .landingimg{
+  .landingimg {
     background-position: right;
   }
 
-  .landinginfo, .socialmedia, .cupcontent{
+  .landinginfo, .socialmedia, .cupcontent {
     position: static;
     margin: 0 auto;
     width: 100%;
   }
 
-  .landinginfo{
+  .landinginfo {
     text-align: center;
     font-size: 3vw;
   }
 
-  .landinginfo h1{
+  .landinginfo h1 {
     padding-top: 30%;
     font-size: 8vw;
   }
 
-  .meoncup{
+  .meoncup {
     width: 35%;
     margin: 7% auto 0;
     text-align: center;
   }
 
-  .cupcontent{
+  .cupcontent {
     margin: 0 auto;
     text-align: center;
   }
 
-  .linkedin, .github{
+  .linkedin, .github {
     margin: 0;
     opacity: 0.9;
   }
 
-  .linkedin{
+  .linkedin {
     margin-left: -2%;
   }
-  .pg1arrow{
+
+  .pg1arrow {
     bottom: 2%;
     left: 47%;
   }
   /* PAGE 2 */
-  .projectimg{
+  .projectimg {
     background-position: center;
     background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/woodcactus.png');
   }
@@ -479,128 +428,99 @@ html, body {
     left: 28%;
     font: bold 5vw Consolas, Monaco, monospace;
   }
-  .projects{
+  .projects {
     float: none;
     text-align: center;
     margin: 0 auto;
     padding-top: 8%;
     width: 65%;
   }
-  .projects h2{
+  .projects h2 {
     font-size: 5vw;
   }
-  .githubButton, .demoButton{
-    margin: 20px;
-  }
-  .githubButton {
-    -webkit-border-radius: 10;
-    -moz-border-radius: 10;
-    border-radius: 10px;
-    font-family: Georgia;
-    color: white;
-    font-size: 2.5vw;
-    padding: 2vw;
-    background: #bf4133;
-    text-decoration: none;
-  }
-  .demoButton {
-    display: inline-block;
-    -webkit-border-radius: 10;
-    -moz-border-radius: 10;
-    border-radius: 10px;
-    font-family: Georgia;
-    color: white;
-    font-size: 2.5vw;
-    padding: 2vw;
-    background: #c78b4c;
-    text-decoration: none;
-  }
-  .pg2arrowdown{
+
+  .pg2arrowdown {
     bottom: -99%;
     left: 93%;
   }
-  .pg2arrowup{
+  .pg2arrowup {
     bottom: -5.2%;
     left: 93%;
   }
 
   /* PAGE 3 */
 
-  .databases, .othertech{
+  .databases, .othertech {
     display: none;
   }
-  .maintech{
+  .maintech {
     float:none;
     font-size: 3.5em;
     width: 100%;
   }
-  .pg3arrowup{
+  .pg3arrowup {
     left: 93%;
   }
-  .pg3contact{
+  .pg3contact {
     left: 81%;
     font-size: 3vw;
     padding: 3vw 4vw;
   }
 }
 /* MOBILE */
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 415px) {
 
-  .landingimg, .projectimg, .techimg{
+  .landingimg, .projectimg, .techimg {
     background-attachment: scroll;
   }
 
   /* PAGE ONE */
-  .landingimg{
+  .landingimg {
     background-position: center;
     background-size: cover;
     background-repeat:no-repeat;
     background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
   }
-  .landinginfo{
+  .landinginfo {
     font-size: 4vw;
     letter-spacing: 5px;
   }
-  .meoncup{
+  .meoncup {
     width: 60%;
     opacity: 1;
     margin-bottom: 2%;
   }
-  .linkedin, .github{
+  .linkedin, .github {
     width: 16%;
     opacity: 1;
     margin: 1%;
   }
-  .projects{
+  .projects {
     width: 95%;
     padding-top: 1%;
   }
-  .githubButton, .demoButton{
-    font-size: 3.5vw;
-    margin: 1%;
-  }
-  .pg2arrowup{
+  .pg2arrowup {
     bottom: -7.2%;
     left: 90%;
   }
-  .pg2arrowdown{
+  .pg2arrowdown {
     bottom: -100%;
     left: 90%;
   }
-  .pg3arrowup{
+  .pg3arrowup {
     left: 90%;
     bottom: -107%;
   }
-  .pg3contact{
+  .pg3contact {
     left: 80%;
     font-size: 4vw;
     padding: 3vw 4vw;
   }
-  .maintech{
+  .maintech {
     font-size: 2.5em;
     opacity: 1;
   }
-  .typewriter{
+  .typewriter {
     display: none;
   }
 }
@@ -611,66 +531,66 @@ html, body {
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    .landingimg, .projectimg, .techimg{
+    .landingimg, .projectimg, .techimg {
       background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
       background-attachment: fixed;
       opacity: 1;
     }
-    .techimg{
+    .techimg {
       min-height: 214%;
     }
     .landinginfo h1 {
       padding-top: 1%;
       font-size: 6vw;
     }
-    .meoncup{
+    .meoncup {
       width: 25%;
       margin: 2% auto 0;
     }
-    .linkedin{
+    .linkedin {
       margin-left: -2%;;
     }
-    .github{
+    .github {
       margin-left: 14%;
     }
-    .pg1arrow{
+    .pg1arrow {
       left: 46%;
     }
-    .typewriter{
+    .typewriter {
       display: none;
     }
-    .pg2arrowup{
+    .pg2arrowup {
       bottom: -15.2%;
     }
-    .pg2arrowdown{
+    .pg2arrowdown {
       bottom: -225%;
     }
-    .maintech h2{
+    .maintech h2 {
       margin: 0;
       background-color: transparent;
       width: 100%;
       font-size: 0.75em;
 
     }
-    .mainsub{
+    .mainsub {
       opacity: 1;
     }
-    .pg3arrowup{
+    .pg3arrowup {
       bottom: -263%;
     }
-    .pg3contact{
+    .pg3contact {
       top: 529.5%;
     }
 
 }
 
 /* SMALLER MOBILE */
-@media only screen and (max-width: 375px){
-  .pg2arrowup{
+@media only screen and (max-width: 375px) {
+  .pg2arrowup {
     bottom: -7.8%;
     left: 89%;
   }
-  .pg2arrowdown{
+  .pg2arrowdown {
     left: 89%;
   }
 }
