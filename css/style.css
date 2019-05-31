@@ -189,13 +189,16 @@ html, body {
     }
 }
 
+/* PAGE TWO // PROJECTS */ /* PAGE TWO // PROJECTS */ /* PAGE TWO // PROJECTS */
+
 .projects {
   opacity: 0.9;
   background-position: center;
   background-size: cover;
   background-repeat: repeat-y;
   background-attachment: scroll;
-  background-image: url(https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/woodcactus.png);
+  background-color: white;
+  /* background-image: url(https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/woodcactus.png); */
   min-height: 100%;
   padding: 25px;
 }
@@ -206,12 +209,40 @@ html, body {
 
 .project {
   text-align: center;
-  padding: 50px 100px;
+  padding: 50px 0;
+}
+
+.project h3 {
+  border-bottom: 1px solid black;
+}
+
+.project img {
+  border: 3px solid grey;
+  border-radius: 4px;
+}
+
+.project a {
+  width: 300px;
+  padding: 15px;
+  border-radius: 0;
 }
 
 @media only screen
   and (max-width: 414px) {
     .project {
-      padding: 25px;
+      padding: 35px 10px;
     }
+}
+
+/* PAGE THREE // TECHNOLOGIES */ /* PAGE THREE // TECHNOLOGIES */ /* PAGE THREE // TECHNOLOGIES */
+
+.technologies {
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  background-image: url(https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/woodcactus.png);
+  min-height: 100%;
+  padding: 25px;
 }
