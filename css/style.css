@@ -1,105 +1,43 @@
-*{
-  margin: 0;
+html {
+  box-sizing: border-box;
 }
-
-*:focus {
-outline: 0;
-outline: none;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 html, body {
-  margin: 0;
-  padding: 0;
-  color: black;
   height: 100%;
-}
-
-.button {
   font-family: 'Questrial', sans-serif;
-  margin: 13px 2px;
   letter-spacing: 2px;
 }
 
-.wrapper {
-  height: 100%;
-}
 
-/* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */
-
-.landingimg {
-  position: relative;
-  opacity: 0.9;
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
-  background-attachment: scroll;
-  background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/jscup.png');
-  min-height: 100%;
-  width: 100%;
-}
-
-.landinginfo, .socialmedia, .cupcontent {
-  position: absolute;
-  width: 100%;
-}
-
-.landinginfo {
-  top: 20%;
-  left: 65%;
-  width: 35%;
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 1vw;
-  font-family: 'Questrial', sans-serif;
-}
-
-.landinginfo h1 {
-  font-size: 2.5vw;
-  font-weight: 100;
+.red-text {
   color: red;
-  letter-spacing: 2px;
 }
 
-.landinginfo h3 {
-  margin-left: 2px;
-  letter-spacing: 1px;
-  color: grey;
+.cap-text {
+  text-transform: uppercase;
 }
 
-.landinginfo h3 a {
-  text-decoration: none;
-  color: black;
+.arrowdown {
+  width: 30px;
+  height: 30px;
+  background-image: url(https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/arrowdown.png);
+  background-size: contain;
 }
 
-.cupcontent {
-  top: 38%;
-  left: 65%;
-  width: 35%;
+.arrowup {
+  width: 30px;
+  height: 30px;
+  background-image: url(https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/arrowup.png);
+  background-size: contain;
 }
 
-.meoncup {
-  display: block;
-  opacity: 0.7;
-  width: 50%;
-  margin-left: 3%;
-}
-
-.cupcontent img:not(.meoncup) {
-  display: inline-block;
-}
-
-.linkedin, .github{
-  width: 11%;
-  opacity: 0.7;
-  margin: 1%;
-}
-
-.linkedin:hover, .github:hover{
-  opacity: 1;
-}
-
-.linkedin{
-  margin-left: 14%;
+.bounce {
+  -moz-animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
+  animation: bounce 1s infinite;
 }
 
 @-moz-keyframes bounce {
@@ -137,36 +75,474 @@ html, body {
   }
 }
 
-.arrowdown {
-  width: 40px;
-  height: 40px;
-  background-image: url(https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/arrowdown.png);
-  background-size: contain;
+@media (max-width: 375px) {
+  .arrowdown {
+    width: 23px;
+    height: 23px;
+  }
+  .arrowup {
+    width: 23px;
+    height: 23px;
+  }
 }
 
-.arrowup {
-  width: 40px;
-  height: 40px;
-  background-image: url(https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/arrowup.png);
-  background-size: contain;
+@media (max-width: 320px) {
+  .arrowdown {
+    width: 16px;
+    height: 16px;
+  }
+  .arrowup {
+    width: 16px;
+    height: 16px;
+  }
 }
 
-
-.bounce {
-  -moz-animation: bounce 1s infinite;
-  -webkit-animation: bounce 1s infinite;
-  animation: bounce 1s infinite;
+@media (min-height: 810px) {
+  .arrowdown {
+    width: 30px;
+    height: 30px;
+  }
+  .arrowup {
+    width: 30px;
+    height: 30px;
+  }
 }
 
-.pg1arrow{
+/* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */
+
+.landing {
+  position: relative;
+  opacity: 0.9;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+
+.landing--info {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.landing--info img {
+  padding: 10px 20px 5px;
+}
+
+.landing--socialmedia {
+  text-align: center;
+}
+
+.landing--socialmedia h1 {
+  font-size: 45px;
+}
+
+.landing--socialmedia h3 {
+  font-size: 19px;
+}
+
+.landing--socialmedia a {
+  margin: 12px auto;
+  text-align: center;
+}
+
+.landing--socialmedia img {
+  width: 100px;
+  padding: 0 5px;
+}
+
+.socialmedia-button {
+  display: block;
+  width: 200px;
+  margin-top: 10px !important;
+}
+
+.pg1arrow {
+  position: absolute;
+  bottom: 1.5%;
+  left: 48%;
+}
+
+@media (min-width: 1281px) {
+  .landing--info img {
+    margin: 0 auto;
+    max-width: 25%;
+  }
+  .linkedin, .github {
+    opacity: 0.8;
+    transition: opacity 1s;
+  }
+
+  .linkedin:hover, .github:hover {
+    opacity: 1.0;
+    transition: opacity 1s;
+  }
+}
+
+@media (max-width: 1280px) {
+  .landing--info img {
+    margin: 0 auto;
+    max-width: 40%;
+  }
+  .landing--socialmedia h1 {
+    font-size: 30px;
+  }
+  .landing--socialmedia h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1028px) {
+  .landing--info img {
+    margin: 0 auto;
+    max-width: 40%;
+  }
+  .landing--socialmedia h1 {
+    font-size: 60px;
+  }
+  .landing--socialmedia h3 {
+    font-size: 26px;
+  }
+  .socialmedia-button {
+    font-size: 20px;
+    width: 225px;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing--info img {
+    margin: 0 auto;
+    max-width: 65%;
+  }
+  .landing--socialmedia h1 {
+    font-size: 60px;
+  }
+  .landing--socialmedia h3 {
+    font-size: 26px;
+  }
+  .socialmedia-button {
+    font-size: 20px;
+    width: 225px;
+  }
+}
+
+@media (max-width: 410px) {
+  .landing {
+    padding: 40px 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .landing {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 360px) {
+  .landing {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 320px) {
+  .landing {
+    padding: 15px 25px;
+  }
+  .pg1arrow {
+    position: absolute;
+    bottom: 0%;
+    left: 48%;
+  }
+}
+
+@media (min-height: 810px) {
+  .landing {
+    padding: 95px 25px;
+  }
+}
+
+@media only screen
+  and (max-device-width: 823px)
+  and (min-device-width: 737px)
+  and (orientation: landscape) {
+    .landing img {
+      max-height: 100%;
+    }
+    .landing--socialmedia {
+      margin-top: 28px;
+    }
+}
+
+@media only screen
+  and (max-device-width: 736px)
+  and (min-device-width: 668px)
+  and (orientation: landscape) {
+    .landing {
+      padding: 40px 25px;
+    }
+    .landing--socialmedia {
+      margin-top: 25px;
+    }
+}
+
+@media only screen
+  and (max-device-width: 667px)
+  and (min-device-width: 567px)
+  and (orientation: landscape) {
+    .landing--info img {
+      padding: 0;
+    }
+    .landing--socialmedia {
+      margin-top: 17px;
+    }
+}
+
+@media only screen
+  and (max-device-width: 568px)
+  and (min-device-width: 415px)
+  and (orientation: landscape) {
+    .landing--info img {
+      padding: 0;
+    }
+    .landing--socialmedia img {
+      width: 80px;
+    }
+}
+
+@media only screen
+  and (max-device-height: 414px)
+  and (orientation: landscape) {
+    .landing--info {
+      vertical-align: top;
+      display: inline-block;
+      width: 49%;
+      height:100%;
+    }
+    .landing--socialmedia {
+      display: inline-block;
+      width: 49%;
+      height: 100%;
+    }
+    .landing--info img {
+      margin: 0 auto;
+    }
+}
+
+/* .landing--socialmedia a {
+  display: inline-block;
+} */
+
+/* .landing--info, .landing--socialmedia {
+  position: absolute;
+  width: 100%;
+}
+
+.landing--info {
+  top: 18%;
+  left: 65%;
+  width: 35%;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Questrial', sans-serif;
+}
+
+.landing--socialmedia {
+  top: 38%;
+  left: 65%;
+  width: 35%;
+}
+
+.landing--socialmedia .meoncup {
+  display: block;
+  opacity: 0.7;
+  width: 50%;
+  margin-left: 3%;
+  margin: 0 auto;
+}
+
+.linkedin, .github {
+  display: inline-block;
+  width: 11%;
+  opacity: 0.7;
+  margin: 1%;
+}
+
+.linkedin:hover, .github:hover{
+  opacity: 1;
+}
+
+.linkedin {
+  margin-left: 14%;
+}
+
+.pg1arrow {
   position: absolute;
   bottom: 53%;
   left: 88%;
-}
+} */
+
+/* @media only screen and (max-width: 1025px) {
+  .landing {
+    background-position: right;
+  }
+
+  .landing--info, .socialmedia, .landing--socialmedia {
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .landing--info {
+    text-align: center;
+    font-size: 3vw;
+  }
+
+  .landing--info h1 {
+    padding-top: 30%;
+    font-size: 8vw;
+  }
+
+  .meoncup {
+    width: 35%;
+    margin: 7% auto 0;
+    text-align: center;
+  }
+
+  .landing--socialmedia {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .linkedin, .github {
+    margin: 0;
+    opacity: 0.9;
+  }
+
+  .linkedin {
+    margin-left: -2%;
+  }
+
+  .pg1arrow {
+    bottom: 2%;
+    left: 47%;
+  }
+} */
+
+/* @media only screen and (max-width: 415px) {
+
+  .landing, .projectimg, .techimg {
+    background-attachment: scroll;
+  }
+
+  .landing--info {
+    font-size: 4vw;
+    letter-spacing: 5px;
+  }
+  .meoncup {
+    width: 60%;
+    opacity: 1;
+    margin-bottom: 2%;
+  }
+  .linkedin, .github {
+    width: 16%;
+    opacity: 1;
+    margin: 1%;
+  }
+  .projects {
+    width: 95%;
+    padding-top: 1%;
+  }
+  .pg2arrowup {
+    bottom: -7.2%;
+    left: 90%;
+  }
+  .pg2arrowdown {
+    bottom: -100%;
+    left: 90%;
+  }
+  .pg3arrowup {
+    left: 90%;
+    bottom: -107%;
+  }
+  .pg3contact {
+    left: 80%;
+    font-size: 4vw;
+    padding: 3vw 4vw;
+  }
+  .maintech {
+    font-size: 2.5em;
+    opacity: 1;
+  }
+  .typewriter {
+    display: none;
+  }
+} */
+
+/* @media only screen and (max-width: 415px) {
+  .landing, .projectimg, .techimg {
+    background-attachment: scroll;
+  }
+  .landing {
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
+  }
+  .landing--info {
+    font-size: 4vw;
+    letter-spacing: 5px;
+  }
+  .meoncup {
+    width: 60%;
+    opacity: 1;
+    margin-bottom: 2%;
+  }
+  .linkedin, .github {
+    width: 16%;
+    opacity: 1;
+    margin: 1%;
+  }
+} */
+/*
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .landing, .projectimg, .techimg {
+      background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
+      background-attachment: fixed;
+      opacity: 1;
+    }
+    .techimg {
+      min-height: 214%;
+    }
+    .landing--info h1 {
+      padding-top: 1%;
+      font-size: 6vw;
+    }
+    .meoncup {
+      width: 25%;
+      margin: 2% auto 0;
+    }
+    .linkedin {
+      margin-left: -2%;;
+    }
+    .github {
+      margin-left: 14%;
+    }
+    .pg1arrow {
+      left: 46%;
+    }
+} */
 
 /* PAGE TWO // PROJECTS & TYPEWRITER */ /* PAGE TWO // PROJECTS & TYPEWRITER */
 
-.projectimg{
+/* .projectimg {
   opacity: 0;
   background-position: top;
   background-size: cover;
@@ -235,17 +611,11 @@ html, body {
   left: 97.1%;
   bottom: -6.2%;
   position: absolute;
-}
-/* 
-@media (min-width: 1600px ){
-  .projects {
-    width: 30%;
-  }
 } */
 
 /* PAGE THREE // TECHNOLOGY */ /* PAGE THREE // TECHNOLOGY */ /* PAGE THREE // TECHNOLOGY */
 
-.techimg {
+/* .techimg {
   background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/techimg.png');
   background-position: top;
   background-size: cover;
@@ -368,56 +738,10 @@ html, body {
     left: 94.5%;
     bottom: -105.5%;
   }
-}
+} */
 
 /* IPAD & IPAD PRO */
-@media only screen and (max-width: 1025px) {
-  /* PAGE ONE */
-  .landingimg {
-    background-position: right;
-  }
-
-  .landinginfo, .socialmedia, .cupcontent {
-    position: static;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .landinginfo {
-    text-align: center;
-    font-size: 3vw;
-  }
-
-  .landinginfo h1 {
-    padding-top: 30%;
-    font-size: 8vw;
-  }
-
-  .meoncup {
-    width: 35%;
-    margin: 7% auto 0;
-    text-align: center;
-  }
-
-  .cupcontent {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .linkedin, .github {
-    margin: 0;
-    opacity: 0.9;
-  }
-
-  .linkedin {
-    margin-left: -2%;
-  }
-
-  .pg1arrow {
-    bottom: 2%;
-    left: 47%;
-  }
-  /* PAGE 2 */
+/* @media only screen and (max-width: 1025px) {
   .projectimg {
     background-position: center;
     background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/woodcactus.png');
@@ -448,8 +772,6 @@ html, body {
     left: 93%;
   }
 
-  /* PAGE 3 */
-
   .databases, .othertech {
     display: none;
   }
@@ -466,35 +788,9 @@ html, body {
     font-size: 3vw;
     padding: 3vw 4vw;
   }
-}
+} */
 /* MOBILE */
-@media only screen and (max-width: 415px) {
-
-  .landingimg, .projectimg, .techimg {
-    background-attachment: scroll;
-  }
-
-  /* PAGE ONE */
-  .landingimg {
-    background-position: center;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
-  }
-  .landinginfo {
-    font-size: 4vw;
-    letter-spacing: 5px;
-  }
-  .meoncup {
-    width: 60%;
-    opacity: 1;
-    margin-bottom: 2%;
-  }
-  .linkedin, .github {
-    width: 16%;
-    opacity: 1;
-    margin: 1%;
-  }
+/* @media only screen and (max-width: 415px) {
   .projects {
     width: 95%;
     padding-top: 1%;
@@ -523,39 +819,14 @@ html, body {
   .typewriter {
     display: none;
   }
-}
+} */
 
 /*  MOBILE LANDSCAPE*/
-@media only screen
+/* @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 667px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
-    .landingimg, .projectimg, .techimg {
-      background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
-      background-attachment: fixed;
-      opacity: 1;
-    }
-    .techimg {
-      min-height: 214%;
-    }
-    .landinginfo h1 {
-      padding-top: 1%;
-      font-size: 6vw;
-    }
-    .meoncup {
-      width: 25%;
-      margin: 2% auto 0;
-    }
-    .linkedin {
-      margin-left: -2%;;
-    }
-    .github {
-      margin-left: 14%;
-    }
-    .pg1arrow {
-      left: 46%;
-    }
     .typewriter {
       display: none;
     }
@@ -581,11 +852,10 @@ html, body {
     .pg3contact {
       top: 529.5%;
     }
-
-}
+} */
 
 /* SMALLER MOBILE */
-@media only screen and (max-width: 375px) {
+/* @media only screen and (max-width: 375px) {
   .pg2arrowup {
     bottom: -7.8%;
     left: 89%;
@@ -593,4 +863,4 @@ html, body {
   .pg2arrowdown {
     left: 89%;
   }
-}
+} */
