@@ -111,7 +111,7 @@ html, body {
 /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */ /* PAGE ONE // LANDING */
 
 .landing {
-  position: relative;
+  /* position: relative; */
   opacity: 0.9;
   background-position: center;
   background-size: cover;
@@ -119,8 +119,8 @@ html, body {
   background-attachment: scroll;
   background-image: url('https://s3-us-west-1.amazonaws.com/kevin-portfolio-images/whitewood.png');
   min-height: 100%;
-  width: 100%;
-  height: 100%;
+  /* width: 100%;
+  height: 100%; */
   padding: 25px;
 }
 
